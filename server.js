@@ -7,7 +7,7 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 const corsOptions = {
-  origin: ['https://todo-list-stack.onrender.com/','https://todo-list-stack.onrender.com/Home','https://todo-list-stack.onrender.com/view','mongodb+srv://ephraim:R4zGxMXPI2MLIlfm@todo-app.9wq8p.mongodb.net/?retryWrites=true&w=majority&appName=Todo-app','*'], 
+  origin: ['https://todo-list-stack.onrender.com/','https://todo-list-stack.onrender.com/Home','https://todo-list-stack.onrender.com/view','*'], 
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   maxAge: 3600, 
